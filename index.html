@@ -1,0 +1,1072 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css" type="text/css">
+
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <!--	 font family   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300&family=Rubik:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!--	end of font family    -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <title>TakeTaskList</title>
+    <style>
+        body {
+            background-image: url("img/bg.JPG");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Vertical navbar for desktop -->
+    <nav class="d-none d-md-block d-lg-block">
+        <div id="navdesktop" class="hover-content ">
+            <div class="text-center" style="padding-bottom: 6.5rem;">
+                <img src="img/user.png" onmouseout="this.src='img/user.png'" onmouseover="this.src='img/user_m.png'"
+                    alt="user.png" width="70" />
+                <h5 style="padding-top: 1rem;" id="user-name" >Jennie Ng</h5>
+                <p>Developer</p>
+            </div>
+            <div class="text-center">
+                <a href="#">
+                    <img src="img/calendar.png" onmouseout="this.src='img/calendar.png'"
+                        onmouseover="this.src='img/calendar_m.png'" alt="calendar.png" width="30" />
+                    <p>Calendar</p>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="#">
+                    <img src="img/team member.png" onmouseout="this.src='img/team member.png'"
+                        onmouseover="this.src='img/team member_m.png'" alt="team member.png" width="30" />
+                    <p>Team member</p>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="#">
+                    <img src="img/setting.png" onmouseout="this.src='img/setting.png'"
+                        onmouseover="this.src='img/setting_m.png'" alt="setting.png" width="30" />
+                    <p>Setting</p>
+                </a>
+            </div>
+            <div class="text-center" style="padding-top: 2rem;">
+                <a href="login.html">
+                    <img src="img/log out.png" onmouseout="this.src='img/log out.png'"
+                        onmouseover="this.src='img/log out_m.png'" alt="log out.png" width="30" />
+                    <p>Log out</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End of vertical navbar desktop -->
+
+    <!-- Circle navbar Mobile -->
+    <div id="navmobile" class="dropdown d-sm-block d-md-none" style="float:left;">
+        <button class="dropbtn"><img src="img/user.png" onmouseout="this.src='img/user.png'"
+                onmouseover="this.src='img/user_m.png'" alt="user.png" width="40" /></button>
+        <div class="dropdown-content" style="left:0;">
+            <a href="#"><img src="img/calendar.png" onmouseout="this.src='img/calendar.png'"
+                    onmouseover="this.src='img/calendar_m.png'" alt="calendar.png" width="30" /></a>
+            <a href="#"><img src="img/team member.png" onmouseout="this.src='img/team member.png'"
+                    onmouseover="this.src='img/team member_m.png'" alt="team member.png" width="30" /></a>
+            <a href="#"><img src="img/setting.png" onmouseout="this.src='img/setting.png'"
+                    onmouseover="this.src='img/setting_m.png'" alt="setting.png" width="30" /></a>
+            <a href="#"><img src="img/log out.png" onmouseout="this.src='img/log out.png'"
+                    onmouseover="this.src='img/log out_m.png'" alt="log out.png" width="30" /></a>
+        </div>
+    </div>
+
+    <!-- End of Circle navbar Mobile -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- start of Calendar List -->
+            <div class="col-12 col-md-7">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center">
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Mon</h6>
+                                        <h5>13</h5>
+                                    </a>
+                                </div>
+
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Tue</h6>
+                                        <h5>14</h5>
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Wed</h6>
+                                        <h5>15</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Thur</h6>
+                                        <h5>16</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Fri</h6>
+                                        <h5>17</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sat</h6>
+                                        <h5>18</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sun</h6>
+                                        <h5>19</h5>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center">
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Mon</h6>
+                                        <h5>22</h5>
+
+                                    </a>
+                                </div>
+
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Tue</h6>
+                                        <h5>23</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#" title="
+● Reading Tech News
+9:00-10:00
+______________________________________
+
+● Research News Content
+10:00-11:30
+______________________________________
+
+● Search for typesetting information
+11:30-12:30
+______________________________________
+
+● Intergration of information
+13:30-14:30
+______________________________________
+
+● Draw the flow chart
+14:30-15:00
+______________________________________
+
+● Design web layout
+15:00-18:00">
+                                        <h6>
+                                            Wed</h6>
+                                        <h5>24</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Thur</h6>
+                                        <h5>25</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Fri</h6>
+                                        <h5>26</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sat</h6>
+                                        <h5>27</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sun</h6>
+                                        <h5>28</h5>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center">
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Mon <br>
+                                            <h5>29</h5>
+                                        </h6>
+                                    </a>
+                                </div>
+
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Tue</h6>
+                                        <h5>30</h5>
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Wed</h6>
+                                        <h5>31</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Mon</h6>
+                                        <h5>13</h5>
+                                    </a>
+                                </div>
+
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Tue</h6>
+                                        <h5>14</h5>
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Wed</h6>
+                                        <h5>15</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Thur</h6>
+                                        <h5>16</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Fri</h6>
+                                        <h5>17</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sat</h6>
+                                        <h5>18</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sun</h6>
+                                        <h5>19</h5>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active ">
+                            <div class="row justify-content-center">
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Mon</h6>
+                                        <h5>22</h5>
+
+                                    </a>
+                                </div>
+
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Tue</h6>
+                                        <h5>23</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#" title="
+● Reading Tech News
+        9:00-10:00
+______________________________________
+
+● Research News Content
+        10:00-11:30
+______________________________________
+
+● Search for typesetting information
+        11:30-12:30
+______________________________________
+
+● Intergration of information
+        13:30-14:30
+______________________________________
+
+● Draw the flow chart
+        14:30-15:00
+______________________________________
+
+● Design web layout
+        15:00-18:00">
+                                        <h6>
+                                            Wed</h6>
+                                        <h5>24</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Thur</h6>
+                                        <h5>25</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Fri</h6>
+                                        <h5>26</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sat</h6>
+                                        <h5>27</h5>
+
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Sun</h6>
+                                        <h5>28</h5>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Mon <br>
+                                            <h5>29</h5>
+                                        </h6>
+                                    </a>
+                                </div>
+
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Tue</h6>
+                                        <h5>30</h5>
+                                    </a>
+                                </div>
+                                <div class="col-1 day">
+                                    <a href="#">
+                                        <h6>Wed</h6>
+                                        <h5>31</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-target="#carouselExampleControls" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next"type="button"
+                        data-target="#carouselExampleControls" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div> -->
+            </div>
+            <!-- end of Calendar List -->
+
+            <!-- start of search bar -->
+            <div class="col-6 search-bar col-md-2">
+                <div class="input-group md-form form-sm form-1 pl-0">
+                    <div class="input-group-prepend">
+                        <a href="#">
+                            <button type="button" class="btn btn-style rounded-pill"><i class="fas fa-search text-black"
+                                    aria-hidden="true"></i></button>
+                        </a>
+                    </div>
+                    <input id="search-box" class="form-control mx-2 py-1 rounded-pill" type="text" placeholder=""
+                        aria-label="Search">
+                </div>
+            </div>
+            <!-- end of search bar -->
+
+            <!-- start of date and time -->
+            <div class="col-3 my-auto d-md-flex time">
+                <div class="col-6 time d-md-flex date-align">
+                    <h5>Jun</h5>
+                    <h2>16</h2>
+
+                </div>
+                <div class="col-6 time">
+                    <h6>Thur</h6>
+                    <h4>17:30</h4>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="top-icon m-md-1 mb-4">
+            <a href="#" class=" px-md-3 px-1">
+                <img title="
+● Return Jimmy's call
+
+● Hand over the paper to    
+    Geroge befor lunch
+
+● Take the black and white 
+     draft home when you leave
+     work
+" src="./img/pin.png" alt="pin.png" width="30">
+            </a>
+            <a href="#" class=" px-md-3 px-1">
+                <img src="./img/Delivery Time.png" alt="Delivery Time.png" width="30">
+            </a>
+            <a href="#" class=" px-md-3 px-1">
+                <img src="./img/Alarm.png" alt="Alarm.png" width="30">
+            </a>
+        </div>
+    </div>
+    <!-- end of date and time -->
+
+
+
+
+    <!-- Detail box coding Start-->
+
+    <!-- <button type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#exampleModal">Open
+        Task</button>       
+        
+        Test Button!!!!!
+     -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-between">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+
+                    <button type="button" class="close">
+                        <span aria-hidden="true"> <a href="#">
+                                <img src="./img/Avatar.png" alt="Avatar.png">
+                            </a>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="modal-form">
+                        <i class="fa-solid fa-hourglass-start"></i>
+                        <label for="appt">
+                            <input type="time" id="appt" name="appt">
+                        </label>
+                        <label class="start-date">
+                            <input type="date" data-display-mode="inline" data-is-range="true"
+                                data-close-on-select="false">
+                        </label>
+                        <br>
+                        <i class="fa-solid fa-hourglass-end"></i>
+
+                        <label for="appt">
+                            <input type="time" id="appt" name="appt">
+                        </label>
+                        <label class="end-date">
+                            <input type="date" data-display-mode="inline" data-is-range="true"
+                                data-close-on-select="false">
+                        </label>
+
+                        <br>
+
+                        <i class="fa-solid fa-bell"></i>10 min before
+
+                        <div class="form-group">
+                            <label for="Detail" class="col-form-label"></label>
+                            <textarea class="form-control" id="message-text" placeholder="Detail"
+                                onfocus="this.placeholder = ''"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Comment" class="col-form-label"></label>
+                            <textarea class="form-control" id="message-text" placeholder="Comment"
+                                onfocus="this.placeholder = ''"></textarea>
+                        </div>
+                        <a href="#">
+                            <img class="pin-img" src="./img/icons-black-pin.png" alt="pin.png">
+                        </a>
+
+                        <div class="form-group">
+                            <label for="pin-message" class="col-form-label"></label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+
+
+                        <h6 class="progress-text">Progress
+                            <span>Priority
+                                <button type="button" class="css-button"></button>
+                                <button type="button" class="css-button2"></button>
+                                <button type="button" class="css-button3"></button>
+                            </span>
+                        </h6>
+                        <div class="radio-btn">
+                            <input type="radio" id="in-hand" name="progress" value="in-hand">
+                            <label class="in-hand-text" for="in-hand">In hand</label>
+                            <input type="radio" id="in-progress" name="progress" value="in-progress">
+                            <label class="in-progress-text" for="in-progress">In progress</label>
+                            <input type="radio" id="finish" name="progress" value="finish">
+                            <label class="finish-text" for="finish">Finished</label>
+                        </div>
+                        <div class="footer-style">
+                            <label class="form-switch">
+                                <span id="publicity" onclick="switchButton()">Public</span>
+                                <input id="switch-btn" type="checkbox">
+                                <i onclick="switchButton()"></i>
+                            </label>
+
+                            <span>
+                                <!-- <a href="#"><i class="fa-solid fa-trash-can"></i></a> -->
+                                <button type="submit" value="Submit" form="modal-form" class="btn btn-light"
+                                    data-dismiss="modal">Save</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Detail box coding End-->
+    <div class="container-fiuld desktop-task-list">
+        <!-- start of Task List Section -->
+        <section id="list-section">
+
+            <!-- start of Todo List -->
+            <form id="todo-list" class="task-list-form listbg" >
+                <h2 class="list-header py-2">ToDo List</h2>
+                <!-- start of Task Content -->
+                <div class="list-tasks" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                    onclick="task1()" draggable="true" ondragstart="drag(event)" id="drag1">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Design Button</span>
+                        <span class="list-task-time">18:32</span>
+                        <span class="list-task-date">16 Jun 2022</span>
+                        <img class="list-task-dot" src="./img/dot-2.png" alt="extras" onclick="openPopupWrapper()">
+                        <div class="list-task-popup">
+                            <ul class="list-task-extras">
+                                <li> <span>Todo</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                <li> <span>Doing</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                <li> <span>Done</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                            </ul>
+                            <img class="list-task-dot-content" src="./img/dot-content.png" alt="dot content">
+                        </div>
+                    </a>
+
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task2()"  draggable="true" ondragstart="drag(event)" id="drag2">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Submit Button 2</span>
+                        <span class="list-task-time">18:34</span>
+                        <span class="list-task-date">16 Jun 2022</span>
+                        <img class="list-task-dot" src="./img/dot-2.png" alt="extras" onclick="openPopupWrapper()">
+                        <div class="list-task-popup">
+                            <ul class="list-task-extras">
+                                <li> <span>Todo</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                <li> <span>Doing</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                <li> <span>Done</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                            </ul>
+                            <img class="list-task-dot-content" src="./img/dot-content.png" alt="dot content">
+                        </div>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task3()" draggable="true" ondragstart="drag(event)" id="drag3">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span id="task3" class="list-task-title px-3">Video</span>
+                        <span class="list-task-time">20:30</span>
+                        <span class="list-task-date">3 Jul 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task4()"  draggable="true" ondragstart="drag(event)" id="drag4">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span id="task4" class="list-task-title px-3">Submit Form</span>
+                        <span class="list-task-time">20:59</span>
+                        <span class="list-task-date">5 Jul 2022</span>
+                    </a>
+                </div>
+                <!-- end of Task Content -->
+                <a href="#" class="add-btn input-group-prepend">
+                    <img src="./img/Add-btn.png" alt="add button">
+                </a>
+            </form>
+            <!-- end of Todo List -->
+
+            <!-- start of In Progress -->
+            <form id="doing-list" class="task-list-form listbg" >
+                <h2 class="list-header py-2">Doing List</h2>
+                <!-- start of Task Content -->
+                <div class="list-tasks" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task5()" draggable="true" ondragstart="drag(event)" id="drag5">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Design Nav</span>
+                        <span class="list-task-time">22:23</span>
+                        <span class="list-task-date">16 Jun 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task6()" draggable="true" ondragstart="drag(event)" id="drag6">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Submit Button</span>
+                        <span class="list-task-time">18:04</span>
+                        <span class="list-task-date">20 Jun 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task7()" draggable="true" ondragstart="drag(event)" id="drag7">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Footer</span>
+                        <span class="list-task-time">18:09</span>
+                        <span class="list-task-date">20 Jun 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task8()" draggable="true" ondragstart="drag(event)" id="drag8">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Submit Form</span>
+                        <span class="list-task-time">23:43</span>
+                        <span class="list-task-date">20 Jun 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task9()" draggable="true" ondragstart="drag(event)" id="drag9">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Sign in/out</span>
+                        <span class="list-task-time">20:37</span>
+                        <span class="list-task-date">21 Jun 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task13()" draggable="true" ondragstart="drag(event)" id="drag13" >
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Selected Dot</span>
+                        <span class="list-task-time">20:42</span>
+                        <span class="list-task-date">21 Jun 2022</span>
+                    </a>
+                </div>
+                <!-- end of Task Content -->
+                <a href="#" class="add-btn input-group-prepend">
+                    <img src="./img/Add-btn.png" alt="add button">
+                </a>
+            </form>
+            <!-- end of In Progress -->
+
+            <!-- start of Done List -->
+            <form id="done-list" class="task-list-form listbg" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2 class="list-header py-2">Done List</h2>
+                <!-- start of Task Content -->
+                <div class="list-tasks">
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task10()" draggable="true" ondragstart="drag(event)" id="drag10">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Find Icon and Image</span>
+                        <span class="list-task-time">13:08</span>
+                        <span class="list-task-date">16 Jun 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task11()" draggable="true" ondragstart="drag(event)" id="drag11">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Design Pattern</span>
+                        <span class="list-task-time">14:25</span>
+                        <span class="list-task-date">16 Jun 2022</span>
+                    </a>
+                    <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                        onclick="task12()" draggable="true" ondragstart="drag(event)" id="drag12">
+                        <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px" height="47px">
+                        <span class="list-task-title px-3">Create Task List</span>
+                        <span class="list-task-time">16:38</span>
+                        <span class="list-task-date">16 Jun 2022</span>
+                    </a>
+                </div>
+                <!-- end of Task Content -->
+                <a href="#" class="add-btn input-group-prepend">
+                    <img src="./img/Add-btn.png" alt="add button">
+                </a>
+            </form>
+            <!-- end of Done List -->
+
+        </section>
+        <!-- end of Task List Section -->
+    </div>
+
+    <div class="container-fiuld d-md-none">
+        <!-- start of Task List Section -->
+        <section id="list-section">
+
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- start of Todo List -->
+                        <form id="todo-list" class="task-list-form listbg">
+                            <h2 class="list-header py-2">ToDo List</h2>
+                            <!-- start of Task Content -->
+                            <div class="list-tasks">
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task1()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Design Button</span>
+                                    <span class="list-task-time">18:32</span>
+                                    <span class="list-task-date">16 Jun 2022</span>
+                                    <img class="list-task-dot" src="./img/dot-2.png" alt="extras"
+                                        onclick="openPopupWrapper()">
+                                    <div class="list-task-popup">
+                                        <ul class="list-task-extras">
+                                            <li> <span>Todo</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                            <li> <span>Doing</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                            <li> <span>Done</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                        </ul>
+                                        <img class="list-task-dot-content" src="./img/dot-content.png"
+                                            alt="dot content">
+                                    </div>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task2()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Submit Button 2</span>
+                                    <span class="list-task-time">18:34</span>
+                                    <span class="list-task-date">16 Jun 2022</span>
+                                    <img class="list-task-dot" src="./img/dot-2.png" alt="extras"
+                                        onclick="openPopupWrapper()">
+                                    <div class="list-task-popup">
+                                        <ul class="list-task-extras">
+                                            <li> <span>Todo</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                            <li> <span>Doing</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                            <li> <span>Done</span> <img src="./img/Ellipse.png" alt="Ellipse"></li>
+                                        </ul>
+                                        <img class="list-task-dot-content" src="./img/dot-content.png"
+                                            alt="dot content">
+                                    </div>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task3()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span id="task3" class="list-task-title px-3">Video</span>
+                                    <span class="list-task-time">20:30</span>
+                                    <span class="list-task-date">3 Jul 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task4()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span id="task4" class="list-task-title px-3">Submit Form</span>
+                                    <span class="list-task-time">20:59</span>
+                                    <span class="list-task-date">5 Jul 2022</span>
+                                </a>
+                            </div>
+                            <!-- end of Task Content -->
+                            <a href="#" class="add-btn input-group-prepend">
+                                <img src="./img/Add-btn.png" alt="add button">
+                            </a>
+                        </form>
+                        <!-- end of Todo List -->
+
+
+
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- start of In Progress -->
+                        <form id="doing-list" class="task-list-form listbg">
+                            <h2 class="list-header py-2">Doing List</h2>
+                            <!-- start of Task Content -->
+                            <div class="list-tasks">
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task5()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Design Nav</span>
+                                    <span class="list-task-time">22:23</span>
+                                    <span class="list-task-date">16 Jun 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task6()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Submit Button</span>
+                                    <span class="list-task-time">18:04</span>
+                                    <span class="list-task-date">20 Jun 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task7()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Footer</span>
+                                    <span class="list-task-time">18:09</span>
+                                    <span class="list-task-date">20 Jun 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task8()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Submit Form</span>
+                                    <span class="list-task-time">23:43</span>
+                                    <span class="list-task-date">20 Jun 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task9()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Sign in/out</span>
+                                    <span class="list-task-time">20:37</span>
+                                    <span class="list-task-date">21 Jun 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task13()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Selected Dot</span>
+                                    <span class="list-task-time">20:42</span>
+                                    <span class="list-task-date">21 Jun 2022</span>
+                                </a>
+                            </div>
+                            <!-- end of Task Content -->
+                            <a href="#" class="add-btn input-group-prepend">
+                                <img src="./img/Add-btn.png" alt="add button">
+                            </a>
+                        </form>
+                        <!-- end of In Progress -->
+
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- start of Done List -->
+                        <form id="done-list" class="task-list-form listbg">
+                            <h2 class="list-header py-2">Done List</h2>
+                            <!-- start of Task Content -->
+                            <div class="list-tasks">
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task10()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Find Icon and Image</span>
+                                    <span class="list-task-time">13:08</span>
+                                    <span class="list-task-date">16 Jun 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task11()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Design Pattern</span>
+                                    <span class="list-task-time">14:25</span>
+                                    <span class="list-task-date">16 Jun 2022</span>
+                                </a>
+                                <a class="list-task btn btn-light" data-toggle="modal" data-target="#exampleModal"
+                                    onclick="task12()">
+                                    <img class="list-task-avatar" src="./img/Avatar.png" alt="avatar" width="47px"
+                                        height="47px">
+                                    <span class="list-task-title px-3">Create Task List</span>
+                                    <span class="list-task-time">16:38</span>
+                                    <span class="list-task-date">16 Jun 2022</span>
+                                </a>
+                            </div>
+                            <!-- end of Task Content -->
+                            <a href="#" class="add-btn input-group-prepend">
+                                <img src="./img/Add-btn.png" alt="add button">
+                            </a>
+                        </form>
+                        <!-- end of Done List -->
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- end of Task List Section -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/e038b5dfcb.js" crossorigin="anonymous"></script>
+    <!--       Bootstrap Js			-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script>
+        function switchButton() {
+            if (document.getElementById("publicity").innerHTML == "Public") {
+                document.getElementById("publicity").innerHTML = "Private";
+            }
+            else {
+                document.getElementById("publicity").innerHTML = "Public";
+            }
+        }
+
+        function task1() {
+            document.getElementById("exampleModalLabel").innerHTML = "Design Button";
+        }
+        function task2() {
+            document.getElementById("exampleModalLabel").innerHTML = "Submit Button 2";
+        }
+        function task3() {
+            document.getElementById("exampleModalLabel").innerHTML = "Video";
+        }
+        function task4() {
+            document.getElementById("exampleModalLabel").innerHTML = "Submit Form";
+        }
+        function task5() {
+            document.getElementById("exampleModalLabel").innerHTML = "Design Nav";
+        }
+        function task6() {
+            document.getElementById("exampleModalLabel").innerHTML = "Submit Button";
+        }
+        function task7() {
+            document.getElementById("exampleModalLabel").innerHTML = "Footer";
+        }
+        function task8() {
+            document.getElementById("exampleModalLabel").innerHTML = "Submit Form";
+        }
+        function task9() {
+            document.getElementById("exampleModalLabel").innerHTML = "Sign in/out";
+        }
+        function task10() {
+            document.getElementById("exampleModalLabel").innerHTML = "Find Icon and Image";
+        }
+        function task11() {
+            document.getElementById("exampleModalLabel").innerHTML = "Design Pattern";
+        }
+        function task12() {
+            document.getElementById("exampleModalLabel").innerHTML = "Create Task List";
+        }
+        function task13() {
+            document.getElementById("exampleModalLabel").innerHTML = "Selected Dot";
+        }
+
+        // dot button
+        var dot_btn = document.querySelector(".list-task-dot");
+        var popupWrapper = document.querySelector(".list-task-popup");
+        let container_fiuld = document.querySelector(".container-fiuld");
+
+        // function openPopupWrapper() {
+        //     if (popupWrapper.style.display === "block") {
+        //         // when dot content is opened
+        //         popupWrapper.style.display = "none";
+        //         console.log("close!");
+        //     } else {
+        //         // when dot content is closed
+        //         popupWrapper.style.display = "block";
+        //         console.log("open!");
+        //     }
+        // }
+
+        dot_btn.onclick = function () {
+            if (popupWrapper.style.display === "block") {
+                // when dot content is opened
+                popupWrapper.style.display = "none";
+                console.log("close!");
+            } else {
+                // when dot content is closed
+                popupWrapper.style.display = "block";
+                console.log("open!");
+            }
+        }
+
+        container_fiuld.addEventListener('click', e => {
+            popupWrapper.style.display = "none";
+        })
+
+        popupWrapper.addEventListener('click', e => {
+            e.stopPropagation();
+        })
+
+        dot_btn.addEventListener('click', e => {
+            e.stopPropagation();
+        })
+    </script>
+
+<!-- Swipe Slide Code -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", { initialSlide: 1 });
+        var swiper2 = new Swiper(".mySwiper2", {
+            initialSlide: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+ <!-- Swipe Slide Code -->
+
+ 
+<!-- Drag & Drop Code-->
+<script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+<!-- Drag & Drop Code-->
+<script>
+window.onload = () =>{
+ document.getElementById("user-name").innerText = localStorage.getItem("username");
+ console.log(localStorage.getItem("username"));
+};
+</script>
+</body>
+
+</html>
